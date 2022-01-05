@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Welcome";
+}
+
+<h2>Welcome to the Movie Section </h2>
+
+<ul>
+    @for (int i = 0; i < (int)ViewData["Number of Visits"]!; i++)
+    {
+        <li>@ViewData["Message"]</li>
+        <li><h5>You have visited "@i" times </h5>  </li>
+    }
+</ul>
